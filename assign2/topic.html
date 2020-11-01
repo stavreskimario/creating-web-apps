@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="JavaScript Object Notation" />
+    <meta name="keywords" content="HTML5, CSS, JavaScript Object Notation, JSON, JS, JavaScript" />
+    <meta name="author" content="Mario Stavreski" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/main.css" rel="stylesheet" />
+    <title>JSON - JavaScript Object Notation</title>
+
+    <link rel="icon" type="image/png" href="images/json-logo.png">
+
+</head>
+
+<body>
+    <header>
+        <h1>JSON - JavaScript Object Notation</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="quiz.html">JSON Quiz</a>
+            <a href="enhancements.html">Enhancements</a>
+            <a href="enhancements2.html">Enhancements 2</a>
+            <a href="#differences">Differences between JavaScript and JSON</a>
+            <a href="#syntax">JSON Syntax</a>
+            <a href="#exchanging">Exhanging Data</a>
+            <a href="#examples">Examples</a>
+        </nav>
+        <hr />
+    </header>
+
+    <article>
+
+
+        <h2 id="differences">Differences between JavaScript and JSON</h2>
+        <p>JSON is used for serializing arrays, objects, strings, numbers, boolean, and null. It is based upon JavaScript syntax but is distinct from it: some JavaScript is not JSON.</p>
+        <section class=container>
+            <div class="diff1">
+                <h3>Object And Arrays</h3>
+                <p>Property names must be double-quoted strings; trailing commas are forbidden.</p>
+            </div>
+            <div class="diff2">
+                <h3>Numbers</h3>
+                <p>Leading zeros are prohibited. A decimal point must be followed by at least one digit. <span class="code">NaN</span> and <span class="code">Infinity</span> are unsupported. </p>
+            </div>
+            <div class="diff3">
+                <h3>Any JSON text is a valid JavaScript expression</h3>
+                <p>... But only in JavaScript engines that have implemented the proposal to make all JSON text valid ECMA-262. In engines that haven't implemented the proposal, U+2028 LINE SEPARATOR and U+2029 PARAGRAPH SEPARATOR are allowed in string literals
+                    and property keys in JSON; but their use in these features in JavaScript string literals is a <span class="code">SyntaxError</span>.</p>
+            </div>
+        </section>
+
+        <hr/>
+
+        <h2 id="syntax">JSON Syntax</h2>
+        <p>JSON syntax is derived from JavaScript object notation syntax:</p>
+        <ul>
+            <li>Data is in name/value pairs</li>
+            <li>Data is separated by commas</li>
+            <li>Curly braces hold objects</li>
+            <li>Square brackets hold arrays</li>
+        </ul>
+        <section class="container">
+            <div class="diff1">
+                <h3>JSON Data</h3>
+                <p>JSON data is written as name/value pairs. A name/value pair consists of a field name (in double quotes), followed by a colon, followed by a value:</p>
+                <span class="code">"name":"Brian"</span>
+                <p>The JSON format is almost identical to JavaScript objects.</p>
+                <span class="code">{"name":"Brian"}</span>
+            </div>
+            <div class="diff2">
+                <h3>JSON Values</h3>
+                <p>In JSON, values must be one of the following data types:</p>
+
+                <ul>
+                    <li>a string</li>
+                    <li>a number</li>
+                    <li>an object</li>
+                    <li>an array</li>
+                    <li>a boolean</li>
+                    <li>null</li>
+                </ul>
+            </div>
+            <div class="diff3">
+                <h3>JSON Uses JavaScript Syntax</h3>
+                <p>Because JSON syntax is derived from JavaScript object notation, very little extra software is needed to work with JSON within JavaScript. With JavaScript you can create an object and assign data to it, like this:</p>
+                <span class="code">var person = { name: "John", age: 31, city: "New York" };</span>
+                <p>You can access a JavaScript object like this:</p>
+                <span class="code">// returns John <br/>person.name;</span>
+
+            </div>
+        </section>
+        <hr/>
+
+        <h2 id="exchanging">Exchanging Data</h2>
+        <p>When exchanging data between a browser and a server, the data can only be text. JSON is text, and we can convert any JavaScript object into JSON, and send JSON to the server. We can also convert any JSON received from the server into JavaScript
+            objects. This way we can work with the data as JavaScript objects, with no complicated parsing and translations.
+
+        </p>
+
+        <hr/>
+        <h2>XML vs JSON</h2>
+        <table>
+            <tr>
+                <th>#</th>
+                <th>XML</th>
+                <th>JSON</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>XSD Validation</td>
+                <td>No Validation</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Includes Namespaces</td>
+                <td>No namespaces</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Requires parsing. XML doc is parsed through parameters</td>
+                <td>Parsing is just an eval, therefore it is fast</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Heavy</td>
+                <td>Light compared to XML</td>
+            </tr>
+        </table>
+        <hr/>
+        <h2 id="examples">Examples</h2>
+        <aside>
+            <p>Example JSON</p>
+        </aside>
+        <a href="images/example.jpg"> <img src="images/example.jpg" alt="JSON example" title="JSON" /></a>
+
+    </article>
+
+    <footer id="footer">
+
+        <p>&copy; Mario Stavreski - Student ID: 103055993</p>
+        <p>Sources used:</p>
+        <p><a href="https://developer.mozilla.org/en-US/" title="MDN Web Docs">MDN Web Docs</a></p>
+        <p><a href="https://www.w3schools.com/" title="W3Schools">W3Schools</a></p>
+
+
+    </footer>
+
+</body>
+
+</html>

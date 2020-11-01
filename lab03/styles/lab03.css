@@ -1,0 +1,75 @@
+/*
+filename: lab03.css
+author: Mario Stavreski
+created: 18/08/2020
+last modified: 18/08/2020
+description: Lab 3 CSS
+*/
+* {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+h1 {
+    color: purple;
+}
+
+nav a {
+    text-decoration: none;
+    border-style: solid;
+    border-color: hotpink;
+    padding: 5px;
+    font-weight: bold;
+    color: hotpink;
+    border-radius: 5px;
+}
+
+a:hover {
+    border-color: darkblue;
+    color: lightblue;
+}
+
+hr {
+    margin-top: 15px;
+}
+
+
+h2 {
+    color: slateblue;
+}
+
+#headings, h3 {
+    color: red;
+}
+
+#paragraphs {
+    color: indigo;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+aside, footer {
+    font-style: italic;
+}
+
+.special {
+    color: darkorange;
+    font-weight: bold;
+}
+
+aside:hover {
+    visibility: hidden; 
+}
+
+#images {
+    text-align: center;
+}
+
+ul {
+    list-style-type: lower-roman;
+}
+
+ol {
+    list-style-type: square;
+}
